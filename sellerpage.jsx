@@ -44,7 +44,15 @@ const CarList = () => {
           placeholder="Search cars..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="border-2 border-gray-300 rounded-md py-2 px-4 mb-6"
+          style={{
+            border: "2px solid #ccc",
+            borderRadius: "5px",
+            padding: "10px",
+            marginBottom: "20px",
+            width: "100%",
+            boxSizing: "border-box",
+            fontSize: "16px",
+          }}
         />
         {/* Car listing */}
         <div>
